@@ -35,12 +35,12 @@ h1, h2, h3 {
     }
 
     h2 {
-        font-size: 2,2rem;
+        font-size: 2.2rem;
     }
 
     p {
         max-width: 70ch;
-        line-height: 1,5;
+        line-height: 1.5rem;
     }
 
     /* css code for header */
