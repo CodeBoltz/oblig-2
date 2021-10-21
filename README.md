@@ -1,5 +1,7 @@
-This is the Hand-in for Oblig 2
+This file contains exta information about this project.
 
 Created by: Gregor Boltz
-Creaded: October 2021
-Created for: Oblig 2 - Webcoding 1292
+Date created: 10.2021
+Created for: Webcoding 1292 Oblig 2
+
+Link to live website: https://folk.ntnu.no/gregorbo/taxi_battle/
