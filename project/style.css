@@ -199,6 +199,21 @@ h1, h2, h3 {
         column-width: 45%;
         column-gap: 10%;
     }
+
+    /* css code switching back image and text */
+    article:nth-child(3) {
+        transform: rotate(0);
+      }
+      
+      article:nth-child(3) > * {
+        transform: rotate(-0deg);      
+        display: block; 
+      }
+
+    /* css code changing background to half red & gradient */
+    #intro-container{
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+    }
 }
 /* css code for screens 960px and bigger */
 @media only screen and (min-width: 960px) {
@@ -215,9 +230,14 @@ h1, h2, h3 {
         margin-left: auto;
         margin-right: auto;
     }
+
     article {
         column-count: 2;
-        column-width: 45%;
-        column-gap: 10%;
+        column-width: 45vw;
+        column-gap: 10vw;
+    }
+
+    #intro-container{
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
     }
 }
