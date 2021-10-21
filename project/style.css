@@ -70,7 +70,7 @@ h1, h2, h3 {
         position: relative;
     }
 
-    header div {
+    header > div {
         background-color: #c5192d;
         padding: 4rem 2rem 2rem;
         margin: auto;
@@ -88,6 +88,7 @@ h1, h2, h3 {
         margin-left: auto;
     }
 
+    /* css code for main */
     main {
         box-shadow: 0 0 1px 0 darkgrey;
         background-color: whitesmoke;
@@ -108,7 +109,7 @@ h1, h2, h3 {
     }
 
     article:nth-child(3) img {
-        margin-top: 0;
+        margin-top: 0rem;
         margin-bottom: 1rem;
     }
     /* css code borders article */
@@ -134,9 +135,7 @@ h1, h2, h3 {
 
     #intro-container li:before {
         width: 1rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1rem 1rem 0 1rem;
     }
 
     #intro-container li:nth-child(1):before {
