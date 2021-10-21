@@ -157,7 +157,6 @@ h1, h2, h3 {
   
     article:nth-child(3) > * {
         transform: rotate(-180deg);      
-        display: block; 
     }
 
     /* css code for the footer */
@@ -179,9 +178,10 @@ h1, h2, h3 {
     footer a:link {
         color: #ffff;
     }
-/* css code for screens 600px - 960px */
-@media only screen and (min-width: 601px) and (max-width: 960px) {
+/* css code for screens 600px */
+@media screen and (min-width: 600px) {
 
+    /* General css rules */
     html {
         font-size: 16px;
     }
@@ -195,29 +195,86 @@ h1, h2, h3 {
     }
 
     article {
-        column-count: 2;
-        column-width: 45%;
-        column-gap: 10%;
+        padding-top: 0;
     }
+
+    #intro-container div {
+        vertical-align: top;
+    }
+  
+    #intro-container div > ul {
+        margin: 0;
+    }
+  
+    #intro-container > div > h2{
+        margin-top: 0;
+    }
+
+    /* changing color to red & gradient */
+    #intro-container {
+        background-image: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        border-bottom: 0.1px solid rgb(209, 209, 209);
+    }
+
+    /* Switching roation of 3rd article */
+    article:nth-child(3) {
+        transform: rotate(0);
+    }
+      
+    article:nth-child(3) > * {
+        transform: rotate(-0deg);      
+    }
+
+    article:nth-child(3) {
+        border-top: 0;
+        border-bottom: 0.1px solid rgb(209, 209, 209);
+      }
+
+    /* Article columns */
+    article > * {
+        display: inline-block;
+        width: 45%;
+      }
+
+      /* css code for the right column */
+      article:nth-child(2) img, 
+      article:nth-child(3) div, 
+      article:nth-child(4) img, 
+      #intro-container div:last-child {
+        margin-left: -6px;
+      }
+
+      /* css code for the left column */
+      article:nth-child(2) div, 
+      article:nth-child(3) img, 
+      article:nth-child(4) div, 
+      #intro-container div:first-child {
+        margin-right: 10%;
+      } 
+
+    article:nth-child(2) img, 
+    article:nth-child(3) img, 
+    article:nth-child(4) img {
+        vertical-align: top;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
 }
 /* css code for screens 960px and bigger */
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+    /* general css rulese */
     html {
         font-size: 24px;
     }
 
-    header {
-        height: 65vh;
+    header > div, main, footer {
+        width: 70vw;
     }
 
-    header > div, main, footer {
-        max-width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    article {
-        column-count: 2;
-        column-width: 45%;
-        column-gap: 10%;
+    article:nth-child(2) img, 
+    article:nth-child(3) div, 
+    article:nth-child(4) img, 
+    #intro-container div:last-child {
+      margin-left: -8px;
     }
 }
