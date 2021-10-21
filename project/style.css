@@ -196,7 +196,7 @@ h1, h2, h3 {
 
     article {
         column-count: 2;
-        column-width: 45%;
+        column-width: auto;
         column-gap: 10%;
     }
 
@@ -213,6 +213,13 @@ h1, h2, h3 {
     /* css code changing background to half red & gradient */
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+    }
+
+    /* css code borders article */
+    article:nth-of-type(1) {
+        border-style: solid;
+        border-width: 0 0 0.1px 0;
+        border-color: lightgrey;
     }
 }
 /* css code for screens 960px and bigger */
@@ -233,11 +240,29 @@ h1, h2, h3 {
 
     article {
         column-count: 2;
-        column-width: 45vw;
-        column-gap: 10vw;
+        column-width: auto;
+        column-gap: 10%;
     }
 
+    /* css code switching back image and text */
+    article:nth-child(3) {
+        transform: rotate(0);
+      }
+      
+      article:nth-child(3) > * {
+        transform: rotate(-0deg);      
+        display: block; 
+      }
+
+    /* css code changing background to half red & gradient */
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+    }
+
+    /* css code borders article */
+    article:nth-of-type(1) {
+        border-style: solid;
+        border-width: 0 0 0.1px 0;
+        border-color: lightgrey;
     }
 }
